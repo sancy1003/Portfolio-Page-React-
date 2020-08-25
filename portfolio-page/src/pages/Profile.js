@@ -1,10 +1,10 @@
 import React from "react";
-import profileImage from "img/main.jpg";
+import profileImage from "img/profileImg.jpg";
 import { Fragment } from "react";
 
 export default function Profile() {
   return (
-    <Fragment>
+    <div className="profile-container">
       <div className="back-paper right"></div>
       <div className="back-paper left"></div>
       <div className="profile">
@@ -23,11 +23,11 @@ export default function Profile() {
         </div>
         <ul className="profile-bottom">
           <li className="profile-bottom-line">
-            <div className="sub">생일</div>
+            <div className="sub">생년월일</div>
             <div className="write">1998. 01. 03</div>
           </li>
           <li className="profile-bottom-line">
-            <div className="sub">학교</div>
+            <div className="sub">학력</div>
             <div className="write">
               인덕대학교 컴퓨터 소프트웨어학과 졸업 예정
             </div>
@@ -42,7 +42,11 @@ export default function Profile() {
           </li>
           <li className="profile-bottom-line">
             <div className="sub">Git</div>
-            <div className="write">github.com/sancy1003</div>
+            <div className="write">
+              <a href="https://www.github.com/sancy1003">
+                github.com/sancy1003
+              </a>
+            </div>
           </li>
           <li className="profile-bottom-line space">
             <div className="sub"></div>
@@ -50,6 +54,6 @@ export default function Profile() {
           </li>
         </ul>
       </div>
-    </Fragment>
+    </div>
   );
 }
