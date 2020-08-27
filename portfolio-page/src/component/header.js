@@ -2,6 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function header() {
+  //const item = document.querySelector(".main-header-item");
+
+  //const disableClick = () => {};
   return (
     <ul className="main-header">
       <li className="main-header-item">
@@ -10,18 +13,18 @@ export default function header() {
         </NavLink>
       </li>
       <li className="main-header-item">
-        <NavLink activeClassName="active" exact to="/Profile">
+        <NavLink activeClassName="active" to="/Profile">
           Profile
         </NavLink>
       </li>
       <li className="main-header-item">
-        <NavLink activeClassName="active" exact to="/Portfolio">
+        <NavLink activeClassName="active" to="/Portfolio">
           Portfolio
         </NavLink>
       </li>
       <li className="main-header-item">
-        <NavLink activeClassName="active" exact to="/Contact">
-          Contact
+        <NavLink activeClassName="active" to="/Blog">
+          Blog
         </NavLink>
       </li>
     </ul>

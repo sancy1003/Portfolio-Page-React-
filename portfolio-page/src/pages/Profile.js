@@ -1,6 +1,5 @@
 import React from "react";
-import profileImage from "img/profileImg.jpg";
-import { Fragment } from "react";
+import profileImage from "img/profileImg2.jpg";
 
 export default function Profile() {
   return (

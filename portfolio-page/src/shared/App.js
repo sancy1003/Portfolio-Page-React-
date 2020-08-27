@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
-import { Home, Profile, Portfolio, Contact } from "pages";
+import { Home, Profile, Portfolio, Blog } from "pages";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "style.css";
 import Header from "component/header";
@@ -22,7 +22,7 @@ function App() {
                   <Route exact path="/" component={Home} />
                   <Route exact path="/Profile" component={Profile} />
                   <Route exact path="/Portfolio" component={Portfolio} />
-                  <Route exact path="/Contact" component={Contact} />
+                  <Route exact path="/Blog" component={Blog} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
