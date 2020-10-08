@@ -72,7 +72,7 @@ export default function Portfolio() {
         ></i>
       </div>
       <div className="warn">
-        Portfolio 페이지는 1400px 이상의 화면에서 확인해주세요.
+        <span>Portfolio 페이지는 넓은 화면에서 확인해주세요.</span>
       </div>
     </Fragment>
   );

@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { MemoryRouter as Router } from "react-router-dom";
 import App from "shared/App";
 
 const Root = () => (
-  <BrowserRouter>
+  <Router>
     <App />
-  </BrowserRouter>
+  </Router>
 );
 
 export default Root;

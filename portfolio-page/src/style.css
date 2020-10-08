@@ -105,6 +105,9 @@ section {
 }
 body {
   line-height: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 ol,
 ul {
@@ -201,6 +204,10 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+.profile-container {
+  width: 100vw;
+  height: 100vh;
 }
 .blog-container {
   display: flex;
@@ -631,17 +638,8 @@ body {
 
 /* media */
 @media (max-width: 1400px) {
-  .portfolio-container {
-    display: none;
-  }
-  .warn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-size: 1.3rem;
-    color: white;
+  .work-intro {
+    width: 350px;
   }
 }
 @media (max-width: 1000px) {
@@ -668,6 +666,7 @@ body {
   }
   .profile {
     width: 80%;
+    min-width: 310px;
     padding: 10px 5% 0 5%;
   }
   .profile-top img {
@@ -709,6 +708,19 @@ body {
     height: 70vh;
     min-height: unset;
     max-height: unset;
+  }
+  .portfolio-container {
+    display: none;
+  }
+  .warn {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .warn span {
+    padding: 0 30px;
   }
 }
 @media (max-width: 550px) {

@@ -22,7 +22,6 @@ function App() {
                   <Route exact path="/" component={Home} />
                   <Route exact path="/Profile" component={Profile} />
                   <Route exact path="/Portfolio" component={Portfolio} />
-                  <Route exact path="/Blog" component={Blog} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>

@@ -22,11 +22,6 @@ export default function header() {
           Portfolio
         </NavLink>
       </li>
-      <li className="main-header-item">
-        <NavLink activeClassName="active" to="/Blog">
-          Blog
-        </NavLink>
-      </li>
     </ul>
   );
 }

@@ -6,6 +6,8 @@ import pfVrmap from "img/pf/pf-vrmap.png";
 import pfEscape from "img/pf/pf-escape.png";
 import pfraid from "img/pf/pf-raid.png";
 import pfJs from "img/pf/pf-js.jpg";
+import pfios from "img/pf/pf-ios.jpg";
+import pfchantube from "img/pf/pf-chantube.jpg";
 
 export default function SelectedPortfolio({ sort, close }) {
   let image = "";
@@ -34,6 +36,12 @@ export default function SelectedPortfolio({ sort, close }) {
         break;
       case "raid":
         image = pfraid;
+        break;
+      case "ios":
+        image = pfios;
+        break;
+      case "chantube":
+        image = pfchantube;
         break;
     }
   };

@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react";
 import memoImg from "img/TodayMemoGI.jpg";
+import iosImg from "img/ios.jpg";
 import SelectedPortfolio from "component/SelectedPortfolio";
 
 export default function PortfolioApp() {
@@ -13,6 +14,14 @@ export default function PortfolioApp() {
     git: "https://github.com/sancy1003/android_memo",
     link: "https://play.google.com/store/apps/details?id=com.pcy.memo",
   };
+  const ios = {
+    name: "ios",
+    title: "IOS 자기소개 앱",
+    info:
+      "자기소개 앱 제작 프로젝트로, Swift언어로 제작하였으며 PickerView, MapView, WebView 등의 기능을 이용하였습니다.",
+    git: "",
+    link: "https://youtu.be/grgTwHnaz2M",
+  };
   const selectedViewClose = () => {
     setselectedPf("none");
   };
@@ -21,6 +30,8 @@ export default function PortfolioApp() {
       selectedView = (
         <SelectedPortfolio sort={memo} close={selectedViewClose} />
       );
+    } else if (selectedPf === "ios") {
+      selectedView = <SelectedPortfolio sort={ios} close={selectedViewClose} />;
     }
   };
 
@@ -36,6 +47,15 @@ export default function PortfolioApp() {
         >
           <img src={memoImg} draggable="false" alt="portfolio img"></img>
           <div>Android 메모 앱</div>
+        </li>
+        <li
+          onClick={() => {
+            setselectedPf("ios");
+          }}
+          className="selected-box"
+        >
+          <img src={iosImg} draggable="false" alt="portfolio img"></img>
+          <div>IOS 자기소개 앱</div>
         </li>
       </ul>
       {selectedView}

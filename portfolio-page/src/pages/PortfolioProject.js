@@ -13,7 +13,7 @@ export default function PortfolioProject() {
     info:
       "Unity 엔진에서 Google VR SDK를 이용하여 제작한 앱으로 360˚카메라로 사진과 동영상을 촬영하였기 때문에 일반 사진보다 자세하게 대학 캠퍼스를 둘러볼 수 있습니다.",
     git: "",
-    link: "",
+    link: "https://youtu.be/Rq0QegeaDlM",
   };
   const escape = {
     name: "escape",
@@ -21,7 +21,7 @@ export default function PortfolioProject() {
     info:
       "Unity 엔진에서 Google VR SDK를 이용하여 제작한 앱으로 vr환경에서 실감나게 방탈출을 즐길 수 있는 게임성 앱입니다.",
     git: "",
-    link: "",
+    link: "https://youtu.be/IxO-jmHVhms",
   };
   const raid = {
     name: "raid",
@@ -29,7 +29,7 @@ export default function PortfolioProject() {
     info:
       "Unity 엔진으로 제작한 단계별로 보스를 공략해나가는 PC 플렛폼 게임입니다.",
     git: "",
-    link: "",
+    link: "https://youtu.be/zkNi0RZ27HA",
   };
   const selectedViewClose = () => {
     setselectedPf("none");
